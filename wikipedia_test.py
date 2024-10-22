@@ -11,7 +11,7 @@ import requests
 #5/3/2024
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+SAVE_PATH="insert path here"
 
 
 #Import URL
@@ -82,7 +82,7 @@ for row in column_data[1:]:
 print('len df', len(df))
 
 #SAVE DATAFRAME AS A CSV
-df.to_csv(r'Q:\Oflog\Council Failure\Web_scraping\la-web-scraping\wikipedia_test.csv', index = False)
+df.to_csv(SAVE_PATH+'\wikipedia_test.csv', index = False)
 
 
 
